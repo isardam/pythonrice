@@ -1,0 +1,29 @@
+1. result = 10 / 0
+# ❌ ZeroDivisionError: division by zero
+
+2. result = int("3.14")
+# ❌ ValueError: invalid literal for int() with base 10
+
+3. result = math.sqrt(-1)
+# ❌ ValueError: math domain error (cannot take square root of negative real number)
+
+4. result = 2 ^ 3
+# ❌ Logic bug: This is bitwise XOR, not exponentiation (use ** instead)
+
+5. result = sum([1, 2, 3], 0.0)
+# ❌ TypeError in Python < 3.8: `sum()` expects start to be int if elements are ints
+
+6. result = round(2.675, 2)
+# ❌ Surprising result due to floating point representation (outputs 2.67 instead of 2.68)
+
+7. result = 1e1000
+# ❌ OverflowError (or evaluates to `inf` depending on system)
+
+8. result = [1, 2, 3] * [2]
+# ❌ TypeError: can't multiply sequence by non-int of type 'list'
+
+9. result = (2 + 3) * (4 - )
+# ❌ SyntaxError: incomplete expression
+
+10. result = abs = abs(-5)
+# ❌ Logical bug: Overwrites built-in `abs()` function
