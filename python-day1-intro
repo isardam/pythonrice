@@ -1,0 +1,42 @@
+🔠 Input/Output One-Liners
+
+name = input("Enter your name: ")
+print(f"Hello, {input('What is your name? ')}!")
+print(input()[::-1])  # Reverse a string from input
+print("Yes" if input() == "yes" else "No")
+
+🔤 String Operations
+result = "hello".upper()
+result = "world".replace("w", "W")
+result = "-".join(["2025", "08", "06"])
+result = "  padded  ".strip()
+result = "racecar" == "racecar"[::-1]  # Palindrome check
+result = any(c.isdigit() for c in "abc123")
+
+➗ Mathematical Operations
+
+result = (3 + 4) * 2 ** 2
+result = abs(-42)
+result = round(22 / 7, 3)
+result = sum(range(1, 101))  # Sum from 1 to 100
+result = divmod(20, 3)  # (quotient, remainder)
+
+✅ Logical Operations
+result = True and False
+result = not (5 > 3 and 2 < 1)
+result = all([True, 1, "nonempty"])
+result = any([0, "", None, "yes"])
+result = (x := 10) > 5  # Walrus operator (Python 3.8+)
+
+📦 Collections: Lists, Sets, Dicts, Tuples
+
+result = [x**2 for x in range(5)]
+result = list(set([1, 2, 2, 3]))
+result = {"a": 1, "b": 2}["a"]
+result = {"x": 1, "y": 2}.get("z", "default")
+result = tuple("abc")
+result = [k for k, v in {"a": 1, "b": 2}.items()]
+result = {x: x**2 for x in range(3)}
+result = sorted([5, 2, 9])
+result = max({"a": 3, "b": 7}.values())
+result = [*range(3), *range(3, 6)]  # List merging
