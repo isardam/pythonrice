@@ -1,9 +1,9 @@
-Example 1: Integer Division Error 
+Example 1: Integer Division  
 
 result = 5 / 2
 print("Result is:", result)
 
-Example 2: Operator Precedence Confusion
+Example 2: Operator Precedence 
 
 a = 10
 b = 5
@@ -11,20 +11,20 @@ c = 2
 result = a + b * c
 print(result)
 
-Example 3: Modulo Misunderstanding
+Example 3: Modulo  
 
 x = 10
 y = 3
 print("Remainder:", x % y)
 
-Example 4: Wrong Use of Exponentiation
+Example 4: Use of Exponentiation
 
 base = 2
 power = 3
 result = base ^ power  # Incorrect: ^ is bitwise XOR, not exponentiation
 print("Power result:", result)
 
-Example 5: Integer Division When Float is Expected
+Example 5: Integer Division vs Float  
 
 distance = 100
 time = 30
@@ -37,7 +37,7 @@ large_number = 10**308
 result = large_number * 1000  # May cause overflow to 'inf'
 print("Result:", result)
 
-Example 7: Misplaced Parentheses Changing Order of Operations
+Example 7: Parentheses Changing Order of Operations
 
 x = 5
 y = 10
