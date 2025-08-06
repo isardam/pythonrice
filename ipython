@@ -1,3 +1,47 @@
-pip install ipython
-pip install "ipython[notebook]"
-ipython notebook
+Example 1: Integer Division Error 
+
+result = 5 / 2
+print("Result is:", result)
+
+Example 2: Operator Precedence Confusion
+
+a = 10
+b = 5
+c = 2
+result = a + b * c
+print(result)
+
+Example 3: Modulo Misunderstanding
+
+x = 10
+y = 3
+print("Remainder:", x % y)
+
+Example 4: Wrong Use of Exponentiation
+
+base = 2
+power = 3
+result = base ^ power  # Incorrect: ^ is bitwise XOR, not exponentiation
+print("Power result:", result)
+
+Example 5: Integer Division When Float is Expected
+
+distance = 100
+time = 30
+speed = distance // time  # Returns 3, but expected 3.33...
+print("Speed:", speed)
+
+Example 6: Overflow in Large Multiplication
+
+large_number = 10**308
+result = large_number * 1000  # May cause overflow to 'inf'
+print("Result:", result)
+
+Example 7: Misplaced Parentheses Changing Order of Operations
+
+x = 5
+y = 10
+z = 3
+total = x + y / z * 2  # May not do what user expects
+print("Total:", total)
+
